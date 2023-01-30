@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+  background-color: grey;
+
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin:auto;
+  justify-content: space-evenly;
+  
+}
+.cardText {
+  margin-top: -6px;
+  padding: 20px;
+  background-color: white;
+  position: absolute;
+  opacity: 0;
+  width: 320px;
+  height: 455px;
+  overflow: auto;
+  transition: all 300ms ease-in-out;
+  text-align: left;
+  
+  
+}
+.cardBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  border: dotted black 6px;
+}
+
+.cardBox:hover .cardText {
+  opacity: 3;
+}
+
+.cardImg {
+  max-height: 450px;
+  min-height: 450px;
+  border-radius:  .65rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: grey;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: black;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  background-color: transparent;
+}
+
+.card {
+  border-radius: 2rem;
+  padding-top: 1px;
+  background-color: grey;
+  padding-bottom: 20px;
+  width: 320px;
+  margin: 2rem 1rem;
+}
+
+.reviewBtn {
+  height: 30px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+.card-title {
+  color: black;
+}
+
+h1 {
+  color: white;
+  border: dotted black 12px;
+  padding: 10px;
+}
+
+
